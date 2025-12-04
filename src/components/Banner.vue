@@ -34,7 +34,7 @@ import fotografo from "../assets/fotografo (1).png";
     }
 
     div{
-        border: solid;
+        //border: solid;
         width: 50%;
         align-items: center;
         display: flex;
