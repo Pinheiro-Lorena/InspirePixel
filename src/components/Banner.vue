@@ -17,30 +17,82 @@ import fotografo from "../assets/fotografo (1).png";
 
 </template>
 
-<style scoped lang ="scss">
-.banner{
-    //border: solid;
+<style scoped lang="scss">
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  gap: 2rem;
+
+  div {
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    margin: 2rem;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    h1{
-        font-size: 2.8rem;
-    }
-    span{
-        color:#E1306C;
-        //font-weight: bold;
-        font-size: 4.5rem;
+  h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  span {
+    color: #E1306C;
+    font-size: 4.5rem;
+  }
+
+  img {
+    width: 45%;
+    max-width: 450px;
+  }
+
+  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 2.4rem;
     }
 
-    div{
-        //border: solid;
-        width: 50%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    span {
+      font-size: 3.5rem;
     }
+
+    img {
+      width: 40%;
+      max-width: 380px;
+    }
+
+    div {
+      width: 55%;
+    }
+  }
+
+  
+  @media (max-width: 576px) {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    div {
+      width: 100%;
+    }
+
+    img {
+      width: 80%;
+      max-width: 280px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.6rem;
+    }
+  }
 }
-
 </style>

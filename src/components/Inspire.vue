@@ -11,7 +11,7 @@ const imagens = ref([]);
 
 //função para buscar as imagens da api
 async function carregarImagens () {
-   const res = await axios.get("https://picsum.photos/v2/list?page=3&limit=30")
+   const res = await axios.get("https://picsum.photos/v2/list?page=3&limit=60")
 
    imagens.value = res.data;
    console.log(res)

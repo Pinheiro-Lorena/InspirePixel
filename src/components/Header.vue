@@ -55,4 +55,22 @@ header{
         align-items: center;
     }
 }
+
+@media (max-width: 992px) {
+  header {
+    div {
+      width: 55%;
+    }
+
+    ul {
+      justify-content: center;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+
 </style>
