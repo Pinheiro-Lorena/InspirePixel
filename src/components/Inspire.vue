@@ -37,7 +37,7 @@ v-for="img in imagens"
     display: flex;
     border-radius: 20px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 3rem;
     justify-content: center;
     
 
